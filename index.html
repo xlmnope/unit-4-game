@@ -14,8 +14,8 @@
 
   </head>
   <body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+    <div class="jumbotron jumbotron-fluid gemsbg">
+        <div class="container bgtrans">
         <h1 class="display-4">Crystal Collector</h1>
          <p class="lead">Each crystal will add a different amount of crystals to your total. To win, click and gather the crystals until you exactly match the number of crystals shown. </p>
           </div>
@@ -23,10 +23,9 @@
 
     <div class="container">
         <div class="row">
-          <div class="col-sm-10">
-            <div class="crystals-needed">
+          <div class="col-sm-10 text-center">
                 <div id="crystals-needed"></div>
-            </div>
+                <div id="total"></div>
           </div>
         </div>
         <div class="row">
@@ -43,13 +42,11 @@
             <div id="yellow-gem">
                 <img src="assets/images/yellow-gem.png" class="crystal-image" alt="yellow gem"/>
             </div>
+            <div id="wins"></div>
+                <div id="losses"></div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-10">
-              Total:<div id="total"></div>
-          </div>
-        </div>
+        
       </div>
         
 

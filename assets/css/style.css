@@ -5,9 +5,20 @@
   margin:auto;
 }
 
-.crystals-needed {
+.crystal-image:hover {
+  cursor: pointer;
 }
 
-#crystals-needed {
-  background-color: white;
+.gemsbg {
+  background-image: url("../images/Gems.jpg");
+}
+.bgtrans {
+  background-color: #ffffff;
+  opacity: 0.4;
+  color: black;
+}
+
+#crystals-needed, #total {
+  font-size: 2em;
+  
 }
