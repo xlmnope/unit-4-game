@@ -1,0 +1,13 @@
+.crystal-image {
+  width: 100px;
+  height: 100px;
+  display:block;
+  margin:auto;
+}
+
+.crystals-needed {
+}
+
+#crystals-needed {
+  background-color: white;
+}
