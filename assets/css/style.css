@@ -1,24 +1,42 @@
+.cry {
+  font-family: 'Righteous', cursive;
+  font-size: 4em;
+}
+
+.winslosses {
+  margin-top: 3em;
+  font-family: 'Righteous', cursive;
+}
+
+.label {
+  position: relative;
+  top: -1em;
+}
 .crystal-image {
   width: 100px;
   height: 100px;
-  display:block;
-  margin:auto;
 }
 
 .crystal-image:hover {
   cursor: pointer;
 }
 
-.gemsbg {
-  background-image: url("../images/Gems.jpg");
-}
-.bgtrans {
-  background-color: #ffffff;
-  opacity: 0.4;
-  color: black;
+
+.game-crystals {
+margin-top: 2em;
 }
 
 #crystals-needed, #total {
-  font-size: 2em;
-  
+  font-size: 3em;
+  font-family: 'Righteous', cursive;
+}
+#crystals-needed {
+  margin-left: .5em;
+}
+#total {
+  margin-left: 1em;
+}
+
+#losses {
+  margin-left: 1em;
 }

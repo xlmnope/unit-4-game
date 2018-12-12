@@ -16,11 +16,8 @@ function getRandomInt(min, max) {
 //create variable for number of gems needed and call function to set to random number
 var numOfGemsNeeded = getRandomInt(19, 120);
 console.log(numOfGemsNeeded);
-
 //show numOfGemsNeeded in html
-document.getElementById("crystals-needed").innerHTML = "Crystals needed: " + numOfGemsNeeded;
-
-
+document.getElementById("crystals-needed").innerHTML = numOfGemsNeeded;
 //assign number to each gem randomly 
 var yellowGemNumber = getRandomInt(1, 12);
 var greenGemNumber = getRandomInt(1, 12);
@@ -30,13 +27,12 @@ console.log("yellow" + yellowGemNumber, "green" + greenGemNumber, "red" + redGem
 
 var total = 0
 //show total right away before click events
-document.getElementById("total").innerHTML = "Crystals collected: " + total;
+document.getElementById("total").innerHTML = total;
 
 var wins = 0
-//show wins
-document.getElementById("wins").innerHTML = "Wins " + wins;
+document.getElementById("wins").innerHTML = "Wins: " + wins;
 var losses = 0
-document.getElementById("losses").innerHTML = "Losses " + losses;
+document.getElementById("losses").innerHTML = "Losses: " + losses;
 
 
 // create click events for each gem
@@ -62,7 +58,7 @@ document.getElementById("blue-gem").addEventListener("click", function(event){
 
 function updateTotal(value) {
   total += value
-  document.getElementById("total").innerHTML = "Crystals collected: " + total;
+  document.getElementById("total").innerHTML = total;
   if (total === numOfGemsNeeded) {
     console.log("yay you win") // make html later
     anotherGame();
@@ -78,24 +74,24 @@ function updateTotal(value) {
 
 function anotherGame() {
   numOfGemsNeeded = getRandomInt(19, 120);
-  document.getElementById("crystals-needed").innerHTML = "Crystals needed: " + numOfGemsNeeded;
+  document.getElementById("crystals-needed").innerHTML = numOfGemsNeeded;
   yellowGemNumber = getRandomInt(1, 12);
   greenGemNumber = getRandomInt(1, 12);
   redGemNumber = getRandomInt(1, 12);
   blueGemNumber = getRandomInt(1, 12);
   console.log("yellow" + yellowGemNumber, "green" + greenGemNumber, "red" + redGemNumber, "blue" + blueGemNumber)
   total = 0
-  document.getElementById("total").innerHTML = "Crystals collected: " + total;
+  document.getElementById("total").innerHTML = total;
 }
 
 function updateWins() {
   wins += 1
-  document.getElementById("wins").innerHTML = "Wins " + wins;
+  document.getElementById("wins").innerHTML = "Wins: " + wins;
 }
 
 function updateLosses() {
   losses += 1
-  document.getElementById("losses").innerHTML = "Losses " + losses;
+  document.getElementById("losses").innerHTML = "Losses: " + losses;
 }
 
 

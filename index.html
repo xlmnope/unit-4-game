@@ -2,58 +2,77 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Crystal Collector</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-  </head>
-  <body>
-    <div class="jumbotron jumbotron-fluid gemsbg">
-        <div class="container bgtrans">
-        <h1 class="display-4">Crystal Collector</h1>
-         <p class="lead">Each crystal will add a different amount of crystals to your total. To win, click and gather the crystals until you exactly match the number of crystals shown. </p>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Crystal Collector</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid gemsbg">
+    <div class="container">
+            <h1 class="cry">Crystal Collector</h1>
+          <p class="lead">Each crystal will add a different amount of crystals to your total. To win, click and gather
+            the crystals until you exactly match the number of crystals shown. </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row game-crystals">
+      <div class="col-sm-5">
+        <div id="crystals-needed"></div>
+          <div class="label">Crystals needed</div>
+      </div>
+      <div class="col-sm-5">
+        <div id="total"></div>
+        <div class="label">Crystals collected</div>
+      </div>
+
+    </div>
+    <div class="row crystal-images justify-content-center">
+      <div class="col-sm-3">
+        <img src="assets/images/red-gem.png" id="red-gem" class="crystal-image" alt="red gem" />
+      </div>
+      <div class="col-sm-3">
+        <img src="assets/images/blue-gem.png" id="blue-gem" class="crystal-image" alt="blue gem" />
+      </div>
+      <div class="col-sm-3">
+        <img src="assets/images/green-gem.png" id="green-gem" class="crystal-image" alt="green gem" />
+      </div>
+      <div class="col-sm-3">
+        <img src="assets/images/yellow-gem.png" id="yellow-gem" class="crystal-image" alt="yellow gem" />
+      </div>
+      
+    </div>
+    <div class="row winslosses">
+    <div class="col-sm-4">
+        <span id="wins"> </span> <span id="losses"></span>
+      </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-          <div class="col-sm-10 text-center">
-                <div id="crystals-needed"></div>
-                <div id="total"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-10">
-            <div id="red-gem">
-                <img src="assets/images/red-gem.png" class="crystal-image" alt="red gem"/>
-            </div>
-            <div id="blue-gem">
-                <img src="assets/images/blue-gem.png" class="crystal-image" alt="blue gem"/>
-            </div>
-            <div id="green-gem">
-                <img src="assets/images/green-gem.png" class="crystal-image" alt="green gem"/>
-            </div>
-            <div id="yellow-gem">
-                <img src="assets/images/yellow-gem.png" class="crystal-image" alt="yellow gem"/>
-            </div>
-            <div id="wins"></div>
-                <div id="losses"></div>
-          </div>
-        </div>
-        
-      </div>
-        
+
+  </div>
+
+  </div>
 
 
-<!--[if lt IE 7]>
+
+  <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
