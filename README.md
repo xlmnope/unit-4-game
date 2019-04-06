@@ -1,3 +1,3 @@
 # unit-4-game
 
-![CrystalCollector](Crystalcollector.png)
+![CrystalCollector](crystalcollector.png)
